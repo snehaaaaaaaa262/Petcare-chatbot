@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  border: 2px solid purple;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-image: url('https://media.istockphoto.com/id/1445196818/photo/group-of-cute-pets-on-white-background-banner-design.jpg?s=612x612&w=0&k=20&c=TFz9WoJfr7o_9VhuUA4XM6B4BC3gQ_TmA2C8Xe372C8=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chat-header {
+  background-color: rgb(128, 84, 128);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.chat-box {
+  height: 450px;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.chat-message.bot {
+  background-color: pink;
+  color: black;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.chat-message.user {
+  background-color: skyblue;
+  color: black;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chat-input-container {
+  display: flex;
+  border-top: 2px solid blueviolet;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
